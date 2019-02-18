@@ -37,9 +37,16 @@ body{
   margin: 0 10px;
 }
 
-
-
 #logo-curso-topo{
   position: relative;
   top:70px;
+}
+
+#container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+  width: 100%;
 }

@@ -1,0 +1,31 @@
+
+#quote-top{
+   width: 100%;
+   margin: 40px 0;
+   padding: 5% 0;
+   background-color: #fabe04;
+}
+
+#quote-top h1{
+  text-align: center;
+  color: #01416d;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+#carrousel{
+  margin: 50px 0;
+}
+
+@media (max-width: 768px){
+
+  #quote-top h1{
+    font-size: 1em;
+    margin: 0 30px;
+  }
+
+  #carrousel{
+    margin: 20px 0;
+  }
+
+}
