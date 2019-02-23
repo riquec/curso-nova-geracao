@@ -2,51 +2,33 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
-/*---------top css----------*/
-
-
-/* position logo */
-#logo-curso-topo{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-/* dimens logo */
-#logo-curso-topo img{
-  width: 150px;
-  height: auto;
-  padding: 20px 0;
-}
-
 #navbar{
-  height: auto;
   position: fixed;
-  z-index: 3000;
-  background-color: #f9f9f9;
   width: 100%;
-
-}
-
-
-#navbar span{
-  font-size: 15px;
-}
-
-#navbar li{
-  margin: 0 10px;
-}
-
-#logo-curso-topo{
-  position: relative;
-  top:70px;
+  top: 0;
+  z-index: 1;
 }
 
 #container{
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 50px;
-  width: 100%;
+  top: 60px;
+}
+
+
+/* style nav-bar */
+#navbar li{
+  margin: 0 10px 0 0;
+}
+
+#navbar  a{
+  color: #fabe04
+}
+
+
+.dropdown-menu {
+  background-color: #212529
+}
+
+@media (max-width: 768px){
+
 }

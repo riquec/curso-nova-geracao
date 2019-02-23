@@ -1,37 +1,96 @@
-
-#quote-top{
-   width: 100%;
-   margin: 40px 0 80px 0;
-   padding: 5% 0;
-   background-color: #fabe04;
+h3{
+  margin: 0;
+}
+#row{
+  margin-top: 20px;
 }
 
-#quote-top h1{
+
+
+.triangulo{
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 0px;
+  border-top-width: 250px;
+  border-left: 250px solid #fabe04;
+}
+
+#row img{
+  width: 200px;
+  height: auto;
+}
+
+#row-art-right{
+  width: 250px;
+}
+
+#quote{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fabe04;
+}
+
+#quote h3{
   text-align: center;
   color: #01416d;
-  font-size: 2em;
   letter-spacing: 5px;
 }
 
-#carrousel{
-  margin-bottom: 40px;
+#carrosel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#carrosel #carouselExampleControls{
+  width: 60%;
 }
 
 
 @media (max-width: 768px){
 
-  #quote-top h1{
+  .triangulo{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 0px;
+    border-top-width: 100px;
+    border-left: 100px solid #fabe04;
+  }
+
+  #row{
+    margin-top: 10px;
+  }
+
+  #row-art-right{
+    width: 100px;
+  }
+
+  #row img{
+    width: 95px;
+    height: auto;
+  }
+
+  #quote{
+    padding: 20px 0;
+  }
+
+
+  #quote h3{
+
     font-size: 1em;
-    margin: 0 30px;
+    text-align: center;
+    color: #01416d;
   }
 
-  #quote-top{
-    padding: 10% 0;
-    margin-bottom: 30px;
+  #carrosel #carouselExampleControls{
+    width: 100%;
   }
 
-  #carrousel{
-    margin-bottom:40px;
-  }
 
 }
