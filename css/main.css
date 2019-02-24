@@ -29,6 +29,43 @@ body{
   background-color: #212529
 }
 
+footer{
+  margin-top: 60px;
+}
+
+#footer{
+  padding: 30px 0;
+  background-color: #01416d;
+  display: flex;
+  align-items: center;
+}
+
+#logotipo-rodape{
+  margin-left: 30px;
+  display: inline-block;
+}
+
+#logotipo-rodape img{
+  width: 80px;
+}
+
+#informacoes-curso{
+  margin-left: 20px;
+}
+
+
+#nome-curso-rodape-div p{
+  color: #fff;
+  font-weight: bold;
+}
+
+#informacoes-atendimento p{
+  color: #fff;
+  font-size: 0.7em;
+}
+
+
+
 @media (max-width: 768px){
 
 }
