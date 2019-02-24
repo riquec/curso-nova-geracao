@@ -232,7 +232,14 @@ h3{
 
    #turmas-aprovados #content{
      width: 100%;
+     align-items: center;
+     justify-content: center;
 
+   }
+
+   #turmas{
+     width: 150px;
+     padding-right: 30px;
    }
 
 
@@ -243,6 +250,9 @@ h3{
    }
 
    #aprovados{
+     padding-left: 30px;
+     padding-right: 0;
+     width: 150px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -250,12 +260,12 @@ h3{
    }
 
    #aprovados h4{
-
-     font-size: 1.5em;
+     font-size: 1.4em;
+     margin-bottom: 10px;
    }
 
    #aprovados img{
-     width: 60px;
+     width: 50px;
      margin-top: 10px;
      height: auto;
    }
