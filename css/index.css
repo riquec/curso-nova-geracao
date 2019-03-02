@@ -111,6 +111,7 @@ h3{
   width: 70%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -124,6 +125,7 @@ h3{
   text-align: left;
   line-height: 1.5;
 }
+
 
 #aprovados{
   display: flex;
@@ -147,6 +149,7 @@ h3{
   margin: 0 10px;
   height: auto;
 }
+
 
 
 @media (max-width: 768px){
