@@ -33,7 +33,7 @@
 #linha-texto h3{
   font-size: 1.7em;
   font-weight: bold;
-  margin-right: 2px;
+  margin-right: 5px;
 
 }
 
@@ -46,4 +46,23 @@
 
 .img-curso img{
   width: 200px;
+}
+
+@media (max-width: 768px){
+  #linha-texto h3{
+    font-size: 1.3em;
+  }
+
+  #linha-texto{
+    align-items: baseline;
+  }
+
+  #texto{
+    width: 90%;
+  }
+
+#linha-texto h4{
+  font-size: 1em;
+}
+
 }
