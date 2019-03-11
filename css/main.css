@@ -29,13 +29,10 @@ body{
   background-color: #212529
 }
 
-#content-page{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
 
 #titulo-pagina{
+  width: 100%;
   background-color: #fabe04;
   padding: 20px;
   margin: 20px 0;
@@ -90,6 +87,15 @@ footer{
 
 
 @media (max-width: 768px){
+
+  #titulo-pagina{
+    padding: 10px;
+  }
+
+  #titulo-pagina h3{
+    font-size: 1.45rem;
+  }
+
   #footer{
     width: 100%;
     display: flex;

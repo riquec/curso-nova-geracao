@@ -1,73 +1,610 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Turmas</title>
+  <title>Turmas</title>
 
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/aos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/turmas.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/turmas.css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.js" charset="utf-8"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/app.js" charset="utf-8"></script>
-    <script src="../js/turmas.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.js" charset="utf-8"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/app.js" charset="utf-8"></script>
+  <script src="../js/turmas.js" charset="utf-8"></script>
 
-  </head>
-  <body  class="bg-light">
+</head>
+<body  class="bg-light">
 
-    <div id="container">
+  <div id="container">
 
-      <!-- navbar -->
-      <div id="navbar">
+    <!-- navbar -->
+    <div id="navbar">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <a class="navbar-brand" href="#">Nova Geração</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li id="inicio" class="nav-item active">
-                <a class="nav-link" href="../index.html">Início<span class="sr-only">(current)</span></a>
-              </li>
-              <li  id="quemsomos" class="nav-item">
-                <a class="nav-link" href="quemsomos.html">Quem somos</a>
-              </li>
-              <li id="turmas-nav" class="nav-item">
-                <a class="nav-link" style="font-weight: bold;"  href="html/turmas.html">Turmas</a>
-              </li>
-              <li id="resultados" class="nav-item">
-                <a class="nav-link"  href="resultados.html">Resultados</a>
-              </li>
-              <li id="concursos" class="nav-item">
-                <a class="nav-link"  href="concursos.html">Concursos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Fale conosco
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" id="comochegar" href="faleconosco.html">Como chegar</a>
-                  <a class="dropdown-item"id="contato"  href="faleconosco.html">Contato</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Nova Geração</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li id="inicio" class="nav-item active">
+              <a class="nav-link" href="../index.html">Início<span class="sr-only">(current)</span></a>
+            </li>
+            <li  id="quemsomos" class="nav-item">
+              <a class="nav-link" href="quemsomos.html">Quem somos</a>
+            </li>
+            <li id="turmas-nav" class="nav-item">
+              <a class="nav-link" style="font-weight: bold;"  href="html/turmas.html">Turmas</a>
+            </li>
+            <li id="resultados" class="nav-item">
+              <a class="nav-link"  href="resultados.html">Resultados</a>
+            </li>
+            <li id="concursos" class="nav-item">
+              <a class="nav-link"  href="concursos.html">Concursos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fale conosco
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" id="comochegar" href="faleconosco.html">Como chegar</a>
+                <a class="dropdown-item"id="contato"  href="faleconosco.html">Contato</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content-page">
+
+      <div id="titulo-pagina">
+        <h3>Turmas</h3>
       </div>
 
-      <div id="content-page">
-
-        <div id="titulo-pagina">
-          <h3>Turmas</h3>
+      <div id="turmas-tipo">
+        <div id="turma">
+          <div id="status">
+            <h5>EM ANDAMENTO</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>Pré-militar (Colégio Naval, EPCAR e CMRJ)</h6>
+          </div>
+          <div class="img-curso">
+            <img src="../img/colegionaval.png" alt="">
+            <p>Foto: Divulgação Marinha do Brasil</p>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária total (semanal): 17,5h</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Matemática -</h7>
+                    <h8 class="valor">5 horas (mais 3 horas de monitoria / correção de provas anteriores)</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Língua Portuguesa / Redação -</h7>
+                    <h8 class="valor">3h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Inglês -</h7>
+                    <h8 class="valor">1,5h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">História e Geografia -</h7>
+                    <h8 class="valor">2h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Biologia -</h7>
+                    <h8 class="valor">2h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Física e Química -</h7>
+                    <h8 class="valor">3h</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Aulas: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Segundas:</h7>
+                    <h8 class="valor">18 às 21h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Terças e Quartas:</h7>
+                    <h8 class="valor">18 às 20h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sextas:</h7>
+                    <h8 class="valor">18 às 20h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Domingos:</h7>
+                    <h8 class="valor"> 08 às 11h.</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div id="turma">
+          <div id="status">
+            <h5>INÍCIO IMEDIATO:</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>Preparatório para o Sexto Ano do EF (Col. Pedro II, Colégio de Aplicação da UERJ e Projeto “CMRJ”)</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária:</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Aulas às segundas, quartas e sextas - </h7>
+                    <h8 class="valor">de 14h30 min  às 17h30min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Matérias: </h7>
+                    <h8 class="valor">Matemática, Língua Portuguesa e Redação</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+          <div class="titulo-turma">
+            <h6>Pré-técnico (Válido para CPII e Colégio de Aplicação da UFRJ)</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária total (semanal): 12h 30min</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Matemática -</h7>
+                    <h8 class="valor">3 horas</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Língua Portuguesa / Redação -</h7>
+                    <h8 class="valor">3h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">História e Geografia -</h7>
+                    <h8 class="valor">2h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Biologia -</h7>
+                    <h8 class="valor">2h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Física e Química -</h7>
+                    <h8 class="valor">2h 30 min</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Aulas: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Terças e quartas:</h7>
+                    <h8 class="valor"> 18 às 20h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Quintas:</h7>
+                    <h8 class="valor"> 18 às 21h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sábados:</h7>
+                    <h8 class="valor"> 10h30min às 13h e 14h30 às 17h30 min</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="turma">
+          <div id="status">
+            <h5>INÍCIO EM 18 DE MARÇO</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>Soldado Fuzileiro Naval (C-FSD-FN TURMAS I e II-2020)</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Aulas:</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Segunda, quarta e quinta -</h7>
+                    <h8 class="valor">Entre 20 e 22h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sábados -</h7>
+                    <h8 class="valor">Entre 8 e 10h</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária (semanal):</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Matemática:</h7>
+                    <h8 class="valor">4h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Português:</h7>
+                    <h8 class="valor">4h;</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="titulo-turma">
+            <h6>Pré-Vestibular</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Aulas:</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Segunda a sábado -</h7>
+                    <h8 class="valor">07:30 às 12:30</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sábados -</h7>
+                    <h8 class="valor">Entre 8 e 10h</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária total (semanal):23h20min  (mais 4 a 5 horas de simulados)</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Matemática -</h7>
+                    <h8 class="valor">5 horas</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Língua Portuguesa/Literatura -</h7>
+                    <h8 class="valor">3h e 20min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Redação e Interpretação de textos -</h7>
+                    <h8 class="valor">3h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Inglês -</h7>
+                    <h8 class="valor">1h e 30min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">História e Geografia -</h7>
+                    <h8 class="valor">4h e 40min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Biologia -</h7>
+                    <h8 class="valor">1h e 30min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Física e Química -</h7>
+                    <h8 class="valor">3h e 30min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sociologia e Filosofia -</h7>
+                    <h8 class="valor">1h e 50min</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="turma">
+          <div id="status">
+            <h5>INÍCIO PRÓXIMO</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>INSS (Cargo: Técnico do Seguro Social)</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária:</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Total: </h7>
+                    <h8 class="valor">250h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Semanal: </h7>
+                    <h8 class="valor">Aproximadamente 9 horas</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Duração do curso: </h7>
+                    <h8 class="valor">7 a 8 meses</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Dias da semana: </h7>
+                    <h8 class="valor"> Segundas e sextas, de 18h30min às 21h30min; e Sábados, de 14 às 17h</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Módulos:</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">1 - Direito Constitucional: </h7>
+                    <h8 class="valor">24h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">2 - Direito Administrativo:</h7>
+                    <h8 class="valor">48h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">3 - Seguridade Social e Direito Previdenciário: </h7>
+                    <h8 class="valor">48h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">4 – Ética no Serviço Público e Reg. Jurídico  Único: </h7>
+                    <h8 class="valor">10h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">5 - Informática:</h7>
+                    <h8 class="valor">36h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">6 - Língua Portuguesa:</h7>
+                    <h8 class="valor">54h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">7 - Redação Oficial:</h7>
+                    <h8 class="valor">9h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">8 - Raciocínio Lógico e Matemático:</h7>
+                    <h8 class="valor">42h;</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="turma">
+          <div id="status">
+            <h5>INÍCIO EM 2 DE ABRIL</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>Curso de Formação de Sargentos (EEAR) – CFS  Turma 2 /2020</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Carga horária total (semanal): 13h</h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Matemática - </h7>
+                    <h8 class="valor">3h e 30 min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Física - </h7>
+                    <h8 class="valor">3h e 30 min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Língua Portuguesa </h7>
+                    <h8 class="valor">3h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Interpretação de textos: </h7>
+                    <h8 class="valor"> 1h e 30 min</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Inglês: </h7>
+                    <h8 class="valor"> 1h e 30 min</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Aulas: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Terças: </h7>
+                    <h8 class="valor">de 18h30 min às 22h;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sextas:</h7>
+                    <h8 class="valor">18h30min às 21:30min;</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Sábados:</h7>
+                    <h8 class="valor">10h às 13h 30min e 14h às 17:30min;</h8>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="turma">
+          <div id="status">
+            <h5>PREVISTAS PARA O 2º SEMESTRE DE 2019</h5>
+          </div>
+          <div class="titulo-turma">
+            <h6>Curso Básico de Língua Portuguesa para Concursos</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Sobre o curso: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Assuntos: </h7>
+                    <h8 class="valor">Acentuação gráfica , ortografia, morfologia, análise sintática, semântica, concordância verbal e nominal, regência e crase, fonética e fonologia, estrutura e formação de palavras.</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Carga horária total: </h7>
+                    <h8 class="valor">48h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Duração do curso: </h7>
+                    <h8 class="valor">2 meses, aproximadamente.</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="titulo-turma">
+            <h6>Curso de Técnicas de Redação e Interpretação de Textos para Concursos</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Sobre o curso: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Carga horária total: </h7>
+                    <h8 class="valor"> 12h</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Duração do curso: </h7>
+                    <h8 class="valor">1 mês, aproximadamente.</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Duração do curso: </h7>
+                    <h8 class="valor">2 meses, aproximadamente.</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="titulo-turma">
+            <h6>Escolas de Aprendizes-Marinheiros  (EAM)– Admissão 2020</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Sobre o curso: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Previsão início: </h7>
+                    <h8 class="valor">Outubro/2019.</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Carga horária total: </h7>
+                    <h8 class="valor">48h</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="titulo-turma">
+            <h6>Academia da Força Aérea (AFA)  – Admissão 2021</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Sobre o curso: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Previsão início: </h7>
+                    <h8 class="valor">Outubro/2019</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Demais informações: </h7>
+                    <h8 class="valor">Mais detalhes serão publicados oportunamente</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="titulo-turma">
+            <h6>Escola Preparatória de Cadetes do Exército (EsPCEx)– Admissão 2021</h6>
+          </div>
+          <div class="infos">
+            <div class="infos-turma">
+              <div class="info-bloco">
+                <div class="info-turma-titulo">
+                  <h7 class="chave">Sobre o curso: </h7>
+                </div>
+                <div class="info-turma-complemento">
+                  <div class="info-turma">
+                    <h7 class="chave">Previsão início: </h7>
+                    <h8 class="valor">Dezembro/2019</h8>
+                  </div>
+                  <div class="info-turma">
+                    <h7 class="chave">Demais informações: </h7>
+                    <h8 class="valor">Mais detalhes serão publicados oportunamente</h8>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bloco">
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
 
       </div>
 
@@ -78,10 +615,7 @@
           <div id="logotipo-rodape">
             <img src="../img/nova_geracao_logo.png" alt="Logo Curso Nova Geração">
           </div>
-
-
-
-
+          <div class="titulo-turma">
           <div id="informacoes-curso">
             <div id="nome-curso-rodape-div">
               <p id="nome-curso-rodape">Curso Nova Geração</p>
