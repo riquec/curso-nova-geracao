@@ -79,8 +79,17 @@
     margin-top: 40px;
   }
 
+  th{
+    font-size: 0.7em;
+  }
+
+  tr{
+    font-size: 0.7em;
+  }
+
   .tipo-concurso{
-    width: 80%;
+    width: 90%;
+
   }
   .descricao{
     width: 100%;

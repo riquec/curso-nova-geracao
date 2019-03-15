@@ -110,6 +110,10 @@
     font-size: 1.3em;
   }
 
+  th,td{
+    font-size: 5em;
+  }
+
   .titulo-turma h6{
     font-size: 1.1em;
   }
