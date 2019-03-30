@@ -26,13 +26,17 @@
 
 .titulo-turma{
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
+  align-items: center;
   justify-content: center;
 }
 
 
 .titulo-turma h6{
   font-size: 1.2em;
+  color: #01416d;
+  font-weight: bold;
 }
 
 .img-curso{

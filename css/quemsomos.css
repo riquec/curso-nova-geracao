@@ -31,11 +31,14 @@
 }
 
 #linha-texto h3{
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: bold;
-  margin-right: 2rnhub
-  px;
+  margin-right: 10px;
 
+}
+
+.espaco{
+  height: 60px;
 }
 
 .img-curso{
