@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/concursos.css">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="../css/faleconosco.css">
+
 
 
 
@@ -20,7 +20,7 @@
   <script src="../js/bootstrap.js" charset="utf-8"></script>
   <script src="../js/aos.js"></script>
   <script src="../js/app.js" charset="utf-8"></script>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
 
 </head>
 <body  class="bg-light">
@@ -53,10 +53,10 @@
               <a class="nav-link"  href="resultados.html">Resultados</a>
             </li>
             <li id="concursos" class="nav-item">
-              <a class="nav-link" style="font-weight: bold;"   href="concursos.html">Concursos</a>
+              <a class="nav-link"  href="concursos.html">Concursos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Fale conosco
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -75,17 +75,42 @@
         <h3>FALE CONOSCO</h3>
       </div>
 
-      <div id="mapa" style='display: flex; justify-content: center;margin: 50px 0'>
-        <div id='map' style='width: 400px; height: 300px;'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicmlxdWVjIiwiYSI6ImNqdGJwN3o4ajBvNWczeW51Y2dveDV1dTMifQ.jtn4b6mnF0gokD49DKxI7A';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-      </script>
-
+    <div class="partes">
+      <div class="sub-parte-site">
+        <h5 class="sub-parte-titulo"> COMO CHEGAR</h5>
+        <div class="imagem-mapa">
+          <img src="../img/mapa-curso.png" alt="Mapa do Curso">
+        </div>
       </div>
+      <div class="sub-parte-site">
+        <h5 class="sub-parte-titulo"> CONTATO</h5>
+        <div class="dados-contato">
+          <div class="dado">
+            <h6 class="chave-dado">Telefone: </h6>
+            <h6 title="resposta-dado">(21) 3327-9237</h6>
+          </div>
+          <div class="dado">
+            <h6 class="chave-dado">Email: </h6>
+            <h6 title="resposta-dado">sigamecursos@globo.com</h6>
+          </div>
+          <div class="dado" id="dado-lista">
+            <h6 class="chave-dado">Horário de funcionamento da secretaria:</h6>
+            <div class="resposta-secretaria">
+              <h6>Segundas: de 14 às 17h;</h6>
+              <h6>Terças: de 09 às 12h;</h6>
+              <h6>Quintas: de 09 às 12h ; de 14  às 17h ; e de 18 às 21h;</h6>
+              <h6>Sextas: de 14 às 17h;</h6>
+              <h6>Sábados: de 09 às 12h;</h6>
+            </div>
+          </div>
+          <div class="dado" id="dado-align-center">
+            <h6 class="chave-dado">Visite nossa página no facebook:</h6>
+            <a href="https://www.facebook.com/novageracaocursosrj/"><input  type="image" src="../img/facebook.png"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     </div>
 

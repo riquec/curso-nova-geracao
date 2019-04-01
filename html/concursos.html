@@ -73,20 +73,44 @@
 
       <div id="concursos-pagina">
         <div class="opcoes-concurso">
-          <div class="opcao-concurso">
-            <button type="button" class="enable" id="opcao-civil" onclick="controlaConcursos('civil')" name="button">Concursos Civis</button>
+          <div class="opcoes-concurso-filtro" id="instituicao-filtro">
+            <h4>Qual seu interesse?</h4>
+            <div class="opcoes">
+              <div class="opcao-concurso">
+                <button type="button" class="enable" id="opcao-civil" value="civil" onclick="controlaConcursos('instituicao','civil')" name="button">Concursos Civis</button>
+              </div>
+              <div class="opcao-concurso">
+                <button type="button" class="disable" id="opcao-militar" value="militar" onclick="controlaConcursos('instituicao','militar')"  name="button">Concursos Militares</button>
+              </div>
+
+            </div>
           </div>
-          <div class="opcao-concurso">
-            <button type="button" class="disable" id="opcao-militar" onclick="controlaConcursos('militar')"  name="button">Concursos Militares</button>
+
+          <div class="opcoes-concurso-filtro" id="nivel-filtro">
+              <h4>Você quer ver concursos civis de que nível?</h4>
+            <div class="opcoes">
+
+              <div class="opcao-concurso">
+                <button type="button" class="enable" id="opcao-fundamental" value="fundamental" onclick="controlaConcursos('nivel','fundamental')" name="button">Fundamental</button>
+              </div>
+              <div class="opcao-concurso">
+                <button type="button" class="disable" id="opcao-medio" value="medio" onclick="controlaConcursos('nivel','medio')"  name="button">Médio</button>
+              </div>
+              <div class="opcao-concurso">
+                <button type="button" class="disable" id="opcao-superior" value="superior" onclick="controlaConcursos('nivel','superior')"  name="button">Superior</button>
+              </div>
+
+            </div>
           </div>
+
         </div>
         <div class="tipo-concurso" id="civis">
-          <h3>Instituições civis</h3>
+          <h3>Instituições Civis</h3>
+          <div class="niveis-concurso" id="civil-fundamental">
 
-          <div class="niveis-concurso">
-            <h5>Ensino fundamental</h5>
 
-            <div class="nivel-concurso">
+            <div class="nivel-concurso" >
+              <h5>Ensino fundamental</h5>
               <div class="concurso">
                 <div class="concurso-titulo">
                   <h6>CAP - UERJ</h6>
@@ -392,9 +416,10 @@
                           </div>
 
                         </div>
-                      </div>
+                        </div>
 
-                      <div class="niveis-concurso">
+
+                      <div class="niveis-concurso" id="civil-medio">
                         <h5>Ensino Médio</h5>
 
                         <div class="nivel-concurso">
@@ -1358,7 +1383,7 @@
                                   </div>
                                 </div>
 
-                                <div class="niveis-concurso">
+                                <div class="niveis-concurso" id="civil-superior">
                                   <h5>Ensino superior</h5>
 
                                   <div class="nivel-concurso">
@@ -1544,7 +1569,7 @@
 
                               <div class="tipo-concurso" id="militar">
                                 <h3>Instituições Militares</h3>
-                                <div class="niveis-concurso">
+                                <div class="niveis-concurso" id="militar-fundamental">
                                   <h5>Ensino fundamental</h5>
                                   <div class="nivel-concurso">
 
@@ -1648,9 +1673,9 @@ Matemática.
                                     </div>
 
                                   </div>
+</div>
 
-
-                                <div class="niveis-concurso">
+                                <div class="niveis-concurso" id="militar-medio">
                                   <h5>Ensino Médio</h5>
                                   <div class="nivel-concurso">
                                     <div class="concurso">
@@ -2097,7 +2122,7 @@ Matemática.
                                   </div>
                                 </div>
 
-                                <div class="niveis-concurso">
+                                <div class="niveis-concurso" id="militar-superior">
                                   <h5>Ensino Superior</h5>
                                   <div class="nivel-concurso">
 

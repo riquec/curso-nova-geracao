@@ -1,0 +1,55 @@
+.partes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-parte-site{
+  width: 70%;
+  margin: 20px 0;
+}
+
+.sub-parte-titulo{
+    padding: 5px;
+    margin: 5px 0;
+    border-bottom: solid 1px #fabe04;
+    font-size: 2em;
+}
+
+.imagem-mapa{
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-mapa img{
+  max-width: 100%;
+}
+
+.dados-contato{
+  margin: 20px 0;
+}
+
+.dado{
+  display: flex;
+  margin: 10px 0;
+}
+
+.chave-dado{
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#dado-lista{
+  flex-direction: column;
+}
+
+.dado input{
+  width: 30px;
+}
+
+#dado-align-center{
+  align-items: center;
+}

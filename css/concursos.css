@@ -7,41 +7,53 @@
 }
 
 .opcoes-concurso{
-  display: flex;
+  width: 70%;
+}
+
+.opcoes-concurso-filtro{
+  margin-bottom: 40px;
+}
+
+.opcoes-concurso h4{
+  font-size: 1.2em;
+  text-align: center;
   margin-bottom: 30px;
-  width: 60%;
+}
+
+.opcoes{
+  display: flex;
   justify-content: space-around;
 
 }
 
-.opcao-concurso{
-  display: flex;
-  align-items: center;
-  width: 250px;
-  justify-content: center;
-
+.opcoes button:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-.enable{
-  padding: 20px;
+.opcoes .disable{
   background: none;
   border: none;
   background-color: #01416d;
+  padding: 20px;
   color: #fff;
-  font-size: 1.2em;
-  box-shadow: black 10px;
+  width: 200px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.disable{
-  padding: 20px;
+.opcoes .enable{
   background: none;
   border: none;
   background-color: #01416d;
+  padding: 20px;
   color: #fff;
-  font-size: 1.2em;
-  box-shadow: black 10px;
-  opacity: 0.6;
+  width: 200px;
+  opacity: 0.7;
+  box-shadow: none;
 }
+
+
+
 
 .tipo-concurso{
   width: 70%;
@@ -50,7 +62,7 @@
   flex-direction: column;
 }
 
-#militar{display: none;}
+/* #militar{display: none;} */
 
 .niveis-concurso{
   margin: 10px 0;
@@ -116,6 +128,24 @@
   #concursos-pagina{
     margin: 30px 0;
     margin-top: 40px;
+  }
+
+  .opcoes{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opcoes button{
+    margin-bottom: 20px;
+  }
+
+  .opcoes .enable{
+    width: 200px;
+  }
+
+  .opcoes .disable{
+    width: 200px;
   }
 
   th{
