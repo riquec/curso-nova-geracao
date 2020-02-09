@@ -86,7 +86,21 @@ footer{
   font-size: 0.7em;
 }
 
+#informacoes-instagram {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#informacoes-instagram p{
+  margin-right: 10px;
+}
+#instagram-img {
+  width: 30px;
+  height: 30px;
 
+}
 
 @media (max-width: 768px){
 
